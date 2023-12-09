@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="t.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Pacifico&display=swap" rel="stylesheet">
+    <title>TEST</title>
+    <style>
+        .center-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="log.html">LOGIN </a>
+        <a href="t.html" class="c">REGISTRATION</a>
+    </nav>
+    <div class="center-content"> 
+        <h1>REGISTRATION</h1>
+    </div>
+    <form class="container">
+        <input type="text" id="name" placeholder="Name" class="inp">
+        <input type="password" id="psd" placeholder="Enter Password" class="inp">
+        <input type="password" id="ps" placeholder="Confirm Password" class="inp">
+        <input type="number" id="numb" placeholder="Phone Number" class="inp">
+        <input type="number" id="age" placeholder="Age" class="inp">
+        <input type="text" id="gender" placeholder="Gender" class="inp">
+        <input type="submit" value="Register" class="inp-submit" onclick="register()">
+    </form>
+    <script>
+        function register(){
+            let a = document.getElementById("name").value;
+            let c = document.getElementById("numb").value;
+            let q1 = document.getElementById("psd").value;
+            let q2 = document.getElementById("ps").value;
+            if(!q1 || !q2){
+                alert("Please enter the password");
+            }
+            if(q1 == q2){
+                alert("Correct Password");
+                alert("REGISTERED SUCCESSFULLY " + a + " " + c);
+            }
+
+            else {
+                alert("Incorrect Password");
+            }
+        }
+        function show(){
+            document.getElementById("")
+        }
+    </script>
+</body>
+</html>

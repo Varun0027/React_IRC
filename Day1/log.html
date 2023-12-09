@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="log.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Pacifico&display=swap" rel="stylesheet">
+    <title>TEST</title>
+    <style>
+        .center-content {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="t.html">REGISTER</a>
+    </nav>
+    <div class="center-content"> 
+        <h1>LOGIN</h1>
+    </div>
+    <form class="container">
+        <input type="text" id="uname" placeholder="UserName" class="inp">
+        <input type="password" id="psd" placeholder="Enter Password" class="inp">
+        <input type="submit" value="LOGIN" class="inp-sb" onclick="register()">
+    </form>
+    <script>
+        function register(){
+            let a = document.getElementById("uname").value;
+            let q2 = document.getElementById("psd").value;
+            if(q2=="123"){
+                alert("Correct Password");
+            } else {
+                alert("Incorrect Password");
+            }
+        }
+    </script>
+    </body>
+</html>

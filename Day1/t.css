@@ -1,0 +1,73 @@
+h1{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Pacifico', cursive;
+    margin-top: 5%;
+    margin-bottom: 0.1%;
+}
+body{
+    background: linear-gradient(to right, #108dc7, #ef8e38);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+.container{
+    background-color:rgba(26, 245, 245, 0.979);
+    border-radius: 2rem;
+    display: flex;
+    width: 27%;
+    height: 60vh;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5px;
+}
+
+.inp{
+    border-radius: 0.9rem;
+    outline: none;
+    padding: 0.7rem;
+    width: 65%;
+    gap: 4rem;
+    border-color: rgb(195, 192, 192);
+    box-shadow:
+  2.7px 4.6px 2.7px rgba(0, 0, 0, 0.053),
+  6.8px 11.6px 6.9px rgba(0, 0, 0, 0.075),
+  13.8px 23.7px 14.2px rgba(0, 0, 0, 0.095),
+  28.5px 48.9px 29.2px rgba(0, 0, 0, 0.117),
+  78px 134px 80px rgba(0, 0, 0, 0.17)
+;
+}
+
+.inp-submit{
+    width: 50%;
+    border-radius: 5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}   
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    border-radius: 2rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 70%;
+    margin-top: 1%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 6px;
+    font-size: 20px;
+    justify-content: center;    
+}
+
+
