@@ -1,0 +1,13 @@
+.navbar{
+    justify-content: right;
+    display: flex;
+    background: linear-gradient(to right,#59c173, #a17fe0, #5d26c1);
+    border-radius: 30rem;
+    padding: 1rem;
+}
+nav a{
+    color: white;
+    padding-inline: 15px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
