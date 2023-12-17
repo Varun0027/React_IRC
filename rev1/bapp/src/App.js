@@ -6,7 +6,6 @@ import Home from './components/Home';
 import SignUp from './components/LS/Sign';
 
 
-
 function App() {
   return (
       <div>
