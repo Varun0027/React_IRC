@@ -1,0 +1,21 @@
+{
+    "user": [
+      {
+        "id": 1,
+        "username": "varun",
+        "password": "1234"
+      },
+      {
+        "id": 2,
+        "username": "varun12",
+        "password": "123"
+      }
+    ],
+    "products": [
+      {
+        "pid": 1,
+        "productname": "cookies"
+      }
+    ]
+  }
+  

@@ -1,179 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Julius Sans One', sans-serif;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+
 .container {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .dash,
-  .showcase {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #f5dd07;
-    width: 50vw;
-    height: 50vh;
-    margin: 20px;
-    border-radius: 10px;
-  }
-  
-  .showcase {
-    margin-left: auto; 
-  }
-  
-  .book-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    background: #2f0dca;
-    width: 95%; 
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    
-  }
-  
-  .book-item {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  border-radius: 0px;
+}
 
-  
-  
-  
-  .book-item img {
-    width: 200px; 
-    height: 300px; 
-    object-fit: cover; 
-    border-radius: 5px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .book-item h3 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .book-item p {
-    margin: 5px 0;
-    color: #555;
-  }
-  
-  .reviews {
-    display: flex;
-    align-items: center;
-    color: #ffd700; 
-    margin-top: 8px;
-  }
-  
-  .reviews span {
-    margin-right: 4px;
-    font-size: 16px;
-  }
+.container .card {
+  vertical-align: top;
+  width: 270px;
+  height: 400px;
+  position: relative;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.content {
+  align-items: center;
+}
 
+.card .content {
+  padding: 0px;
+  transition: 0.8s all ease;
+  color: #ccc;
+  transform: translateY(200px);
+  opacity: 1;
+}
 
-  .footer{
+.card:hover .content {
+  transform: translateY(1px);
+  opacity: 1;
+}
 
-    display: flex;
-    width: 100vw;
-    height: 9rem;
-    padding-top: 20px;
-    background-color: #333;
-  }
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 1.2;
+}
 
-  .card {
-    display: flex;
-    height: 70px;
-    width: 350px;
-  }
-  
-  .card svg {
-    position: absolute;
-    display: flex;
-    width: 60%;
-    height: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    opacity: 1;
-    transition: opacity 0.25s;
-    z-index: 2;
-    padding: 0.25rem;
-    cursor: pointer;
-  }
-  
-  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4,.card .social-link5 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    color: whitesmoke;
-    font-size: 24px;
-    text-decoration: none;
-    transition: 0.25s;
-    border-radius: 50px;
-  }
-  
-  .card svg {
-    transform: scale(1);
-  }
-  
-  .card .social-link1:hover {
-    background: #f09433;
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link2:hover {
-    background-color: #242c34;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link3:hover {
-    background-color: #5865f2;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link4:hover {
-    background-color: #0a66c2;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  .card .social-link5:hover {
-    background-color: #ff8000;
-    animation: bounce_613 0.4s linear;
-  }
-  
-  @keyframes bounce_613 {
-    40% {
-      transform: scale(1.4);
-    }
-  
-    60% {
-      transform: scale(0.8);
-    }
-  
-    80% {
-      transform: scale(1.2);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 9;
+  position: relative;
+  margin-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: -20px;
+  font-weight: 400;
+}
 
-  .foot
-  {
-    padding: 5px;
+.card .content h2 {
+  color: #fff;
+  font-weight: 400;
+}
 
+.card .content a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 8px 30px 11px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  color: rgb(251, 251, 251);
+  border-radius: 50px;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.8);
+  transition: 0.8s all ease;
+}
+
+.card .content a:hover {
+  background: #9C27B0;
+}
+
+.cap {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-weight: 400;
+  color: rgb(255, 172, 172);
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: block;
   }
-
-  .foot:hover{
-     color:#e6683c
-  }
+}
