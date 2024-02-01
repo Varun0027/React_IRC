@@ -1,0 +1,30 @@
+.navbar-container {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+  }
+  
+  /* Styling for the links */
+  .home,
+  .about {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Hover effect for the links */
+  .home:hover,
+  .about:hover {
+    color: #ffcc00; /* Change the color as per your preference */
+  }
+  
